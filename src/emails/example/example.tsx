@@ -20,7 +20,7 @@ export interface ExampleProps {
     companyName: string;
 }
 
-const ExampleHtml = ({firstName, companyName}: ExampleProps): React.ReactElement => {
+export const ExampleHtml = ({firstName, companyName}: ExampleProps): React.ReactElement => {
     return (
       <Mjml>
         <MjmlHead>
@@ -84,7 +84,7 @@ const ExampleHtml = ({firstName, companyName}: ExampleProps): React.ReactElement
     );
 };
 
-const ExampleString = ({firstName, companyName}: ExampleProps): string => {
+export const ExampleString = ({firstName, companyName}: ExampleProps): string => {
     return (
         `First Name: ${firstName}, Company Name: ${companyName}`
     );
