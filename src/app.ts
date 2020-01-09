@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 /**
  * Primary app routes.
  */
-app.get("/api", apiController.getApi);
+app.post("/email_template", apiController.getEmail);
 
 
 export default app;
